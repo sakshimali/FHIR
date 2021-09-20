@@ -1,0 +1,52 @@
+%dw 2.0
+
+type auto_bdec1b41_221d_4220_80b5_cab1c3764ba2_Output_Payload = {
+  entry?: Array<{    extension?: Array<anonymousType_1> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+    id?: String, 
+    _?: Any
+  }>, 
+  identifier?: {
+    period?: anonymousType_1, 
+    system?: String, 
+    use?: "secondary" | "temp" | "usual" | "old" | "official", 
+    assigner?: anonymousType_1, 
+    "type"?: anonymousType_1, 
+    value?: String, 
+    _?: Any
+  } {"description": "Persistent identifier for the bundle"}, 
+  total?: Number, 
+  signature?: {
+    data?: String, 
+    onBehalfOf?: anonymousType_1, 
+    sigFormat?: String, 
+    targetFormat?: String, 
+    "type": Array<{      extension?: Array<anonymousType_1> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+      system?: String, 
+      code?: String, 
+      userSelected?: Boolean, 
+      display?: String, 
+      id?: String, 
+      version?: String, 
+      _?: Any
+    } {"description": "A Coding is a representation of a defined concept using a symbol from a defined \"code system\".\nSee http://hl7.org/fhir/STU3/terminologies.html for more details.\n"}> {"description": "Indication of the reason the entity signed the object(s)"}, 
+    when: String, 
+    who?: anonymousType_1, 
+    _?: Any
+  } {"description": "Digital Signature"}, 
+  meta?: anonymousType_1, 
+  link?: Array<anonymousType_1> {"description": "Links related to this Bundle"}, 
+  implicitRules?: String, 
+  language?: String, 
+  id?: String, 
+  "type": "batch-response" | "document" | "searchset" | "batch" | "transaction-response" | "history" | "collection" | "message" | "transaction", 
+  timestamp?: String, 
+  _?: Any
+} {"description": "Contains a collection of resources\n+ Rule: total only when a search or history\n+ Rule: entry.search only when a search\n+ Rule: entry.request mandatory for batch/transaction/history, otherwise prohibited\n+ Rule: entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited\n+ Rule: FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)\n+ Rule: A document must have an identifier with a system and a value\n+ Rule: A document must have a date\n+ Rule: A document must have a Composition as the first resource\n+ Rule: A message must have a MessageHeader as the first resource\nElements defined in Ancestors: id, meta, implicitRules, language\n"}
+type anonymousType_1 = {
+  extension?: Array<anonymousType_1> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+  id?: String, 
+  _?: Any
+}
+
+
+
