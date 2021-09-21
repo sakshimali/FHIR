@@ -36,7 +36,7 @@
 						<environment>Sandbox</environment>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
-						<applicationName>Fhir</applicationName>
+						<applicationName>Fhir-DEMO</applicationName>
 						<password>Sakshimali@1997</password>
 						<muleVersion>4.3.0</muleVersion>
 						<objectStoreV2>true</objectStoreV2>
