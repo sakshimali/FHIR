@@ -32,16 +32,17 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<username>Sakshimali_1997</username>
-						<environment>Sandbox</environment>
-						<workers>1</workers>
-						<workerType>Micro</workerType>
-						<applicationName>Fhir-DEMO</applicationName>
-						<password>Sakshimali@1997</password>
-						<muleVersion>4.3.0</muleVersion>
-						<objectStoreV2>true</objectStoreV2>
-					</cloudHubDeployment>
-				</configuration>  
+						<uri>https://anypoint.mulesoft.com
+							<muleVersion>4.3.0</muleVersion>
+							<username>Sakshimali_1997</username>
+							<password>Sakshimali@1997</password>
+							<applicationName>fhir-demo</applicationName>
+							<environment>Sandbox</environment>
+							<workers>1</workers>
+							<workerType>MICRO</workerType>
+							<objectStoreV2>true</objectStoreV2>
+							</cloudHubDeployment>
+						</configuration>
 			</plugin>
 		</plugins>
 	</build>
