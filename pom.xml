@@ -32,11 +32,11 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com
+						<uri>https://anypoint.mulesoft.com</uri>
 							<muleVersion>4.3.0</muleVersion>
 							<username>Sakshimali_1997</username>
 							<password>Sakshimali@1997</password>
-							<applicationName>fhir-demo</applicationName>
+							<applicationName>fhir</applicationName>
 							<environment>Sandbox</environment>
 							<workers>1</workers>
 							<workerType>MICRO</workerType>
